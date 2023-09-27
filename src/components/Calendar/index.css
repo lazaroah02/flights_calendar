@@ -1,6 +1,17 @@
 .calendar-months-navigator{
-    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap:10px;
 }
-.calendar-grid-header{
-    
+.days-header{
+    text-align: center;
+}
+.calendar-days-grid{
+    margin-top: 20px;
+    max-width: 1000px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(50px, 1fr));
+    gap:1px 1px;
 }

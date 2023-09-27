@@ -1,6 +1,7 @@
-function Day({dayNumber, handleNavigate, disabled}) {
+import './index.css'
+function Day({dayNumber = "", handleNavigate, disabled}) {
     return ( 
-        <section className = {disabled?`day-disabled`:null} onClick={() => handleNavigate(dayNumber)}>
+        <section className = {disabled?'day-disabled':'day'} onClick={disabled?null:() => handleNavigate(dayNumber)}>
             {dayNumber}
         </section>
      );
